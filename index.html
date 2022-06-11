@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -85,7 +85,7 @@
 <meta property="og:url" content="https://langdayu.github.io/index.html">
 <meta property="og:site_name" content="D&amp;L">
 <meta property="og:description" content="This is a special blog page, hoping U acquire something useful here">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:locale">
 <meta property="article:author" content="David Longer">
 <meta property="article:tag" content="Computational Mathematics, Optimal Transport, Deep Learning">
 <meta name="twitter:card" content="summary">
@@ -96,15 +96,15 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -131,6 +131,16 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?29dcc1e1a4b23d7fd37af2b53f9051e5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
@@ -138,14 +148,14 @@
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container sidebar-position-left 
+  <div class="container sidebar-position-right 
   page-home">
     <div class="headband"></div>
 
@@ -183,21 +193,61 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
           </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-friends">
+          <a href="/friends/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-friend"></i> <br />
+            
+            友情链接
           </a>
         </li>
       
@@ -239,7 +289,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/headimg.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -263,9 +313,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-01-03T17:44:18+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-01-03T17:44:18+08:00">
                 2022-01-03
               </time>
             
@@ -284,7 +334,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -300,6 +350,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2022/01/03/2022/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2022/01/03/2022/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -327,15 +388,22 @@
       
         
           
-            <h4 id="2022，新年到！"><a href="#2022，新年到！" class="headerlink" title="2022，新年到！"></a>2022，新年到！</h4><p>时间是一个很神奇的东西，越关注它，就会感觉它越慢；越不关注它，就会感觉它越快。还没来得及总结2021年，2022年就已经来临。</p>
-<p>新的一年，要更加成熟，更加努力，为自己想要的全力以赴！</p>
-<p>打开自己，像烟花一样尽情飞舞。</p>
-<p>接受普通，努力出众；自强不息，厚德载物。</p>
-<img src="/2022/01/03/2022/1.jpg" class="">
-<img src="/2022/01/03/2022/2.jpg" class="">
-<img src="/2022/01/03/2022/3.jpg" class="">
-<img src="/2022/01/03/2022/4.jpg" class="">
+          2022，新年到！时间是一个很神奇的东西，越关注它，就会感觉它越慢；越不关注它，就会感觉它越快。还没来得及总结2021年，2022年就已经来临。
+新的一年，要更加成熟，更加努力，为自己想要的全力以赴！
+打开自己，像烟花一样尽情飞舞。
+接受普通，努力出众；自强不息，厚德载物。
+
+
+
+
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2022/01/03/2022/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -387,7 +455,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/headimg.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -411,9 +479,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-12-10T21:20:24+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-12-10T21:20:24+08:00">
                 2021-12-10
               </time>
             
@@ -432,7 +500,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -448,6 +516,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/12/10/xin-qing/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2021/12/10/xin-qing/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -475,21 +554,20 @@
       
         
           
-            <h3 id="心情（2021-12-10"><a href="#心情（2021-12-10" class="headerlink" title="心情（2021/12/10)"></a>心情（2021/12/10)</h3><blockquote>
-<p>这是最好的时代</p>
-<p>这是最坏的时代</p>
-</blockquote>
-<p>​        今天是2021年12月10日，距离考博初试不到一个月时间，距离论文交稿一个月时间，距离选调生考试一个月时间，距离中期答辩不到一个月时间，距离23岁生日不到一天。</p>
-<p>​        好像能够理解大家所说的研三之忙碌了，找工作是这个时候，论文也是这个时候，这是个重要的节点，跟研一研二给人的感觉都不一样。会迷茫，从逃避读博到现在复习考博，每天看看官网有没有公布初试名单，因为都不确定到底有没有机会考试。迷茫还体现在各个方面，但是起码比起之前的迷茫，现在更多的是有了一些方向。我知道自己最想要什么，所以才会坚持，虽然之前努力不够，但是现在也要拼尽全力去争取，这是对自己负责，对家人负责，对爱我的人和我爱的人负责。我可不想让自己的亲人、爱人和孩子以后只能因为自己没有好好努力，而跟着自己委曲求全，我觉得我可以更好，我们都可以更好。</p>
-<p>​        保研是在2018年下半年，距今三年时间。当时的我，大概没想过以后的自己还要为了考博愁眉苦脸，可能已经被免试的经历恃宠若娇，可是如今终于要重新走上这条考试的道路，自己的选择，自己的意愿，跪着也要走完。</p>
-<p>​        自己的研究生生活迷茫了两年，现在终于有些方向，有些行动，所谓大器晚成，亡羊补牢，为时不晚。有多想达到目标，就应该有多想努力付出。曾老师说的很好，总要写一篇论文出来，感受下整体的流程，我觉得这样我的研究生才算完整，才算合格。得过且过不是我的风格。滕老师也说的很好，不管自己怎么样，都要自信，努力将自己推销出去。</p>
-<p>​        生活中有这样那样的小烦恼，可是应该知道自己最想得到的是什么，轻重主次分清楚，不管怎样，都应该为自己的目标，为自己的理想坚持，努力，努力提升自己，比什么都强，比什么都重要。努力提升自己，应该是一种习惯，是一种根植于心的坚持，当自己变得更好的时候，也许自己周围的世界也会变得更好。</p>
-<p>​        保持一颗积极向上，一往无前，自信的姿态，放开脚步，朝着自己的目标去努力。记住父母的爱与鼓励，记住爱人的爱与包容，记住自己内心的信念，不断强化，心无旁骛，专心致志。自己内心最想达到的目标，总该充满信念、毫不犹豫地去坚持一把才行。在人生两轮之前，交给自己一个满意的答卷。</p>
-<blockquote>
-<p>​        世上无难事，只要肯攀登。 ———毛泽东</p>
-</blockquote>
+          心情（2021/12/10)
+这是最好的时代
+这是最坏的时代
 
-          
+​        今天是2021年12月10日，距离考博初试不到一个月时间，距离论文交稿一个月时间，距离选调生考试一个月时间，距离中期答辩不到一个月时间，距离23岁生日不到一天。
+​        好像能够理解大家所说的研三之忙碌了，找
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/12/10/xin-qing/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -541,7 +619,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/headimg.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -565,9 +643,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-12-01T09:44:00+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-12-01T09:44:00+08:00">
                 2021-12-01
               </time>
             
@@ -586,7 +664,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -602,6 +680,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/12/01/yi-xue-tu-xiang-pei-zhun-he-rong-he/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2021/12/01/yi-xue-tu-xiang-pei-zhun-he-rong-he/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -629,60 +718,26 @@
       
         
           
-            <h2 id="配准和融合概览"><a href="#配准和融合概览" class="headerlink" title="配准和融合概览"></a>配准和融合概览</h2><p>配准是融合的先决条件</p>
-<h3 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h3><ul>
-<li><p>解剖图像：提供解剖形态信息，分辨率高</p>
-</li>
-<li><p>功能图像：提供功能代谢信息，分辨率低</p>
-</li>
-<li>二者融合：在一幅图像中同肘表达来自人体多方面的信息，使人体内部结构和功能等状况能通过影像反映出来，直观提供人体解剖生理病理信息。</li>
-<li>配准 $ \to $ 融合</li>
-</ul>
-<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><ul>
-<li><p>外科手术</p>
-<p>术前病灶精确定位</p>
-</li>
-<li><p>放疗计划</p>
-<p>CT图像精确计算放射剂量、MR图像描述肿瘤结构，PET对代谢、免疫及生理方面进行识别，配准融合后图像用于改进放疗计划、立体定向活检、手术</p>
-</li>
-</ul>
-<h2 id="配准"><a href="#配准" class="headerlink" title="配准"></a>配准</h2><ul>
-<li>医学图像配淮是指对于一幅医学图像寻求一种(或一系列)空间变换，使它与另一幅医学图像上的对应点达到空间上的一致。这种一致是指人体上的同一解剖点在两张匹配图像上有相同的空间位置(位置一致,角度一致、大小一致)。</li>
-<li>目的：将多种成像模式或同一种模式得到的多幅图像综合分析，更好的了解组织情况</li>
-<li>解决的问题：几幅图像的严格对齐</li>
-</ul>
-<h2 id="融合"><a href="#融合" class="headerlink" title="融合"></a>融合</h2><ul>
-<li>几幅图像信息综合的结黑称作图像的融合( image fusion)</li>
-<li>利用图像融合技术，将多种图像结合起来,利用各自的信息优势，在一幅图像上同肘表达来自人体的多方面信息，使人体内部的结构、功能等多方面的状况通过影像反映出来，从而更加直观地提供人体解剖、生理及病理等信息。</li>
-<li>图像配准技术是图像融合的先决条件</li>
-</ul>
-<p>配准是指图像间寻得一个合适的变换，这表示两幅图像上每个体素之间都应该有逐一对应的位置关系。这种变换通常分为刚体和非刚体变换。</p>
-<h4 id="刚体变换"><a href="#刚体变换" class="headerlink" title="刚体变换"></a>刚体变换</h4><p>刚体变换可以由变换矩阵来表示，常见的就是平移和旋转。</p>
-<h4 id="非刚体变换"><a href="#非刚体变换" class="headerlink" title="非刚体变换"></a>非刚体变换</h4><p>非刚体变换可以由多项式函数来拟合如样条函数，或者是由形变位移场记录每个体素的移动向量。传统的多模态配准方法往往需要多次迭代以产生最优化的参数，如基于特征点的配准算法、基于最大互信息的配准算法以及基于强度的配准算法等。然而，使用基于特征点的方法还需要进行额外的特征提取与特征匹配步骤。基于最大互相信息与基于强度等迭代优化指标的配准算法虽然准确率高但是不能一劳永逸，每次当新的配准对出现的时候都要进行新的迭代优化以完成配准，这无疑是不惜以高昂的时间成本为代价以换取好的配准结果。</p>
-<p>针对图像间的非线性变换，目前流行的方法是利用形变场进行配准。</p>
-<h2 id="医学图像研究背景"><a href="#医学图像研究背景" class="headerlink" title="医学图像研究背景"></a>医学图像研究背景</h2><h3 id="MRI"><a href="#MRI" class="headerlink" title="MRI"></a>MRI</h3><p><strong>MRI 图像有着更高的空间分辨率以及更好的软组织清晰度，医生能够从中获得关于人体的物理特性数据，但是缺乏运动信息，如身体新陈代谢。</strong></p>
-<p>使用 MRI 来引导放射治疗(Radiation Therapy, RT)计划的趋势已逐年攀升。例如，在 2006 年至 2017 年间，美国在 RT 治疗计划中的 MRI 利用率从 6％增加到 24％[1]。</p>
-<p><strong>MRI 与 CT 比，更适合于人体的非骨性部位和软组织成像</strong>，此优势可以解释以上的快速增长情况。并且，<strong>MRI 可以更准确地描绘患者的目标体积，**</strong>可以描绘周围的危险器官(Organs At Risk, OAR)<strong>**，还可以通过功能成像提供有关肿瘤活动的信息，例如细胞密度和肿瘤生物学</strong>。正是由于 MRI 的这些优势，越来越多的临床机构将使用 MRI 包括在 RT 计划流程中，以便最大程度地受益于 MRI 可以提供的附加信息。</p>
-<h3 id="CT与MRI融合"><a href="#CT与MRI融合" class="headerlink" title="CT与MRI融合"></a>CT与MRI融合</h3><p>CT图像优点：CT 图像具有短扫描时间和高成像分辨率特征，然而，它在组织表征方面是有限的。</p>
-<blockquote>
-<p>CT与MRI融合</p>
-<p>RT所需的电子密度信息只能通过CT成像提供,其扫描获得的 Hounsfield unit(HU测量值对于计算癌症患者的治疗剂量大有裨益,能够尽可能多地确保其在保留健康组织的同时将最大剂量输送到目标区域。</p>
-<p>MRI可提供出色的软组织成像</p>
-</blockquote>
-<p>到目前为止,与CT成像相比,尽管MRI可提供出色的软组织成像,但是用于RT的MRI的固有局限性在于它无法为治疗计划系统中的剂量计算提供所需的电子密度信息。电子密度信息对于剂量计算非常重要。传统地,RT所需的电子密度信息只能通过CT成像提供,其扫描获得的 Hounsfield unit(HU测量值对于计算癌症患者的治疗剂量大有裨益,能够尽可能多地确保其在保留健康组织的同时将最大剂量输送到目标区域。因此几乎100%的RT计划都要使用CT,这致使许多机构不得不调整他们的RT治疗计划的工作流程<strong>,在该流程中通常以两种成像方式对患者进行扫描,即同时获取MRI与CT然而在RT中加入CT的劣势也十分明显</strong>:</p>
-<p>1)使得工作流程变得更加复杂:</p>
-<p>2)仍然需要患者额外地暴露在放射环境中;</p>
-<p>3)由于对对准轮廓的需求更多,所以对于配准许多疾病部位的不确定性有所增加。</p>
-<h3 id="PET和MRI融合"><a href="#PET和MRI融合" class="headerlink" title="PET和MRI融合"></a>PET和MRI融合</h3><blockquote>
-<p>PET和MRI融合</p>
-<p>PET是具有广泛临床应用的非侵入性功能成像方式,对示踪剂摄取的准确定量具有重大的临床意义</p>
-<p>结合解剖学成像模式以实现更好的软组织可视化,减少常规给药活动并缩短扫描时间以及<br>提高对毫米大小结构中放射性药物积聚的检测能力。</p>
-<p>PET/MRI的AC过程面临着扫描运动,图像伪影及体素强度向μ-map值的错误转换的挑战。</p>
-</blockquote>
-<p>同时,目前PET是具有广泛临床应用的非侵入性功能成像方式,对示踪剂摄取的准<br>确定量具有重大的临床意义。将PET用在药物开发领域中的目标占有率,治疗反应监测<br>和治疗结果预测这种苛刻的应用上时,由于PET在物理上的低计数统计和非理想性的<br>分体积效应,致使计算PET吸收定量的准确性收到了一定程度上的限制。而随着MRI<br>的引入, PET/MRI组合系统在研究和临床应用中越来越受欢迎,因为PET/MRI可以结<br>合解剖学成像模式以实现更好的软组织可视化,减少常规给药活动并缩短扫描时间以及<br>提高对毫米大小结构中放射性药物积聚的检测能力。然而,PET的重建需要用到衰减系<br>数图(-map)来完成对y-光子的衰减校正( Attenuation correction,AC),而-map是用来<br>度量电子密度的。但由于PET与MRI在成像测量的物理性质上没有直接的联系,所<br>PET/MRI的AC过程面临着扫描运动,图像伪影及体素强度向μ-map值的错误转换的挑战</p>
-<h3 id="最优的途径—-sCT"><a href="#最优的途径—-sCT" class="headerlink" title="最优的途径—-sCT"></a>最优的途径—-sCT</h3><h3 id="图像配准"><a href="#图像配准" class="headerlink" title="图像配准"></a>图像配准</h3><p>传统的图像配准方法通常的做法是，将不同的图像按照对应的位置使用迭代的方法优化每一对体素。尽管这样的方法能达到高的配准准确率，但缺点也十分明显，<strong>首先，迭代优化的过程使得整个配准过程太慢，通常配准需要花费好几个小时，致使这种低效率的配准方式无法大规模地应用在临床上。其次，配准得尽可能要求是独立的，而非学习式的过程。学习式的过程意味着每一场配准都需要消耗同样长的时间。</strong>而深度网络的出现改变了传统的配准模式，变换参数可以在网络中被学习，传统数小时的配准过程被压缩到了几秒钟[8]。在有监督的配准方法中，送入配准网络的训练数据都有真实标签，即经过空间变换后的配准图像。通常，有监督学习采用的做法是用传统的基于迭代的配准方法预先获得训练数据的真实标签。然而，有监督学习存在的问题是标签本身并不是真实的标签，而是一个准确率较高的变换结果，因此配准的效果会因为标签的不准确性而大打折扣。由此引出了本文探究的另一种配准方法，即无监督的配准方法。<br><strong>无监督的方法是基于有监督方法存在的缺陷进行改进的版本[9-11]。无监督方法利用不同图像之间的差异性构建形变场，而形变场就是一个变换矢量场。</strong></p>
-<h4 id="配准指标-dice值"><a href="#配准指标-dice值" class="headerlink" title="配准指标 dice值"></a>配准指标 dice值</h4>
-          
+          配准和融合概览配准是融合的先决条件
+意义
+解剖图像：提供解剖形态信息，分辨率高
+
+功能图像：提供功能代谢信息，分辨率低
+
+二者融合：在一幅图像中同肘表达来自人体多方面的信息，使人体内部结构和功能等状况能通过影像反映出来，直观提供人体解剖生理病理信息。
+配准 $ \to $ 融合
+
+应用
+外科手术
+术
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/12/01/yi-xue-tu-xiang-pei-zhun-he-rong-he/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -734,7 +789,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/headimg.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -758,9 +813,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-11-29T09:31:05+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-11-29T09:31:05+08:00">
                 2021-11-29
               </time>
             
@@ -779,7 +834,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -795,6 +850,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/11/29/pu-tong-de-yi-tian/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2021/11/29/pu-tong-de-yi-tian/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -822,13 +888,17 @@
       
         
           
-            <h4 id="普通的一天"><a href="#普通的一天" class="headerlink" title="普通的一天"></a>普通的一天</h4><p>今天是普通的一天<br>太阳照常升起<br>万物正常上班<br>东海岸风平浪静<br>西海岸惊涛拍岸</p>
-<p>今天是普通的一天<br>产房里初生孩子大哭<br>努力睁眼<br>同样的地方<br>ICU的医生汗水浸透衣衫<br>拯救的人要去鬼门关</p>
-<p>今天是普通的一天<br>游乐场的孩童嬉笑打闹<br>考场里的考生看着时间<br>烤冷面的大妈一手拿着平铲<br>为了儿子的房子不停摊鸡蛋<br>教堂的新人看着彼此<br>眼睛里是幸福的明天</p>
-<p>今天是普通的一天<br>有人来，有人还<br>有人苦，有人甜<br>有人聚，有人散</p>
-<p>今天是普通的一天<br>有量变，也有质变<br>地球还在公转<br>明天永远也摸不到<br>今天是唯一拥有的一天</p>
-
-          
+          普通的一天今天是普通的一天太阳照常升起万物正常上班东海岸风平浪静西海岸惊涛拍岸
+今天是普通的一天产房里初生孩子大哭努力睁眼同样的地方ICU的医生汗水浸透衣衫拯救的人要去鬼门关
+今天是普通的一天游乐场的孩童嬉笑打闹考场里的考生看着时间烤冷面的大妈一手拿着平铲为了儿子的房子不停摊鸡蛋教堂的新人看着彼此眼
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/11/29/pu-tong-de-yi-tian/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -880,7 +950,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/headimg.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -904,9 +974,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-11-24T12:52:00+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-11-24T12:52:00+08:00">
                 2021-11-24
               </time>
             
@@ -925,7 +995,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -941,6 +1011,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/11/24/zhuan-xin-chi-fan/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2021/11/24/zhuan-xin-chi-fan/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -968,14 +1049,16 @@
       
         
           
-            <h3 id="专心吃饭"><a href="#专心吃饭" class="headerlink" title="专心吃饭"></a>专心吃饭</h3><p>​        我曾经在别处介绍过一个我最喜欢的书痴故事，关于匈牙利革命时期的一位贵族，他嗜书如狂到了一个程度，即使是在被推上断头台之际，仍然不忘用笔在书上划线做笔记。假如一个人爱书爱到了连死之将至也不为所动的地步，那书痴这个称号他就实在是当之无愧了。</p>
-<p>​        我再和大家介绍一位真正的美食家。他是一位二十世纪的日本大禅师，日日修行也没甚么别的嗜好，唯独喜欢甜食。在他病重的时候，弟子们从全国各地赶来探望，当然也不忘带一些和菓子送给恩师，好让他在圆寂前尝一尝。终于到了快要坐化的那一刻了，老禅师一如任何道行高深的修行者，端坐席上，相貌平和。然后，他竟然再拿起了一块甜饼，放进口中，有点艰难地慢慢咀嚼。吃罢，他微微启唇，好像要说点甚么，于是弟子们统统紧张地紧聚过去，心想师傅要做他人生中最后一次开示了，非得好好听清楚不可。老禅师终于说话了，他只说了两个字，“好吃！。”然后他就断了气。</p>
-<p>​        一个人走到了死前的最后一刻，心中想的竟然还是适才甜品的滋味，留下的遗言竟然还是对那块甜品的赞美，没有任何告别，更没有不舍与恐惧，他还不算最厉害的美食家吗？所谓的美食家难道不就该是这般模样吗？一心一意地对待眼前的食物，别无旁骛，甚至置生死于度外。</p>
-<p>​        后来大家都说这位禅师真是高，已经到达觉悟的境界了，理由是佛学的修行最讲究一个人是否时刻“正念”。“正念”指的就是非常专注地活在当下，走路时专心走路，睡觉时专心睡觉，脑子里既不执着过去发生的快事，也不忧虑未来的烦恼。这种状态自然是快乐的，同时也是无我的，因为它完全切断了我的过去与未来，不把过去发生的事情当做自己的事，也不把将来的我看成是现在这个我的延续。要在平常达到这种状态已经很难，要在死的那一剎那仍然保持它就更难。所以很多人都认定这位甜品禅师是真正的涅槃了。</p>
-<p>​        其实我们天天进食，又何曾试过每一餐每一口都专心地吃呢？吃早餐的时候看报纸，吃午饭的时间变成一场工作会议，吃晚餐的时候用电视汁捞饭；我们有多久没试过好好地，一心一意地对待眼前的食物？如果我们专心地吃，食物的味道会不会变得和平常不一样呢？</p>
-<p>​        我们常常为一些吃斋的人感到可惜，为一些饮食上诸多禁忌的人扼腕，觉得他们失去了人生的乐趣。可是回头细想，我平常囫囵吞枣地吃东西，甚至吃着这一顿的同时就念着下一顿，难道这就真的享受了人生，懂得饮食的乐趣了吗？看来美食家起码可以分成两类，绝大多数都是心思敏捷，想象力丰富，吃着一块肉的时候，会回味起从前远方某家菜馆的手段是如何地高明，又或者明天的一顿盛宴。少数像甜品禅师这样的，则全神贯注于眼前所见嘴中所言。对这种人来讲，或许连一口白饭都是人间至味。 </p>
-
-          
+          专心吃饭​        我曾经在别处介绍过一个我最喜欢的书痴故事，关于匈牙利革命时期的一位贵族，他嗜书如狂到了一个程度，即使是在被推上断头台之际，仍然不忘用笔在书上划线做笔记。假如一个人爱书爱到了连死之将至也不为所动的地步，那书痴这个称号他就实在是当之无愧了。
+​        我再和大家介绍一位
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/11/24/zhuan-xin-chi-fan/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1013,7 +1096,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&gt;</a>
   </nav>
 
 
@@ -1048,6 +1131,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/headimg.jpg"
+                alt="" />
+            
               <p class="site-author-name" itemprop="name"></p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -1057,10 +1144,10 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives%7C%7C%20archive">
               
                   <span class="site-state-item-count">9</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -1071,7 +1158,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">categories</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -1082,7 +1169,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/OT/index.html">
                   <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">tags</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -1128,7 +1215,7 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -1136,7 +1223,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -1236,6 +1323,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
   
 
   
@@ -1247,6 +1341,14 @@
 
   
 
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
 
   
 
